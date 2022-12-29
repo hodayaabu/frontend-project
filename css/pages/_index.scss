@@ -1,0 +1,287 @@
+//colors
+$purpleSiteColor: #9453A6;
+$greenSiteColor: #8CBF3F;
+$yellowSiteColor: #F2CC0F;
+$greySiteColor: #343a40;
+$whiteSiteColor: #fdf8e5;
+$blueSiteColor: #09053f;
+
+
+@font-face {
+    font-family: Henny-Penny;
+    src: url(../../fonts/HennyPenny-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/Roboto-Black.ttf);
+}
+
+
+body{
+    font-family: Roboto;
+}
+
+// title style:
+h1.home-page-titel{
+    font-family: Pattaya; 
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    color: $whiteSiteColor;
+}
+
+//gallery styel:
+div.wrap-gallery{
+    width: 60%;
+    margin:30px auto;
+
+    div.gallery-carousel{
+        width: 88%;
+        height: auto;
+        margin: 20px auto;
+
+        h5{
+            background-color: $greySiteColor;
+            opacity: 0.7;
+            margin: auto;
+            font-size: 25px;
+            padding: 10px;
+        }
+        
+
+        img{
+            margin: auto;
+            width: 900px;
+            max-width: 100%;
+            border: 2px solid $whiteSiteColor
+        }
+    }
+}
+
+div.responsive-img img{
+    display: none;
+}
+
+// info styel:
+div.short-info{
+    padding: 30px;
+    margin: 20px auto;
+    width: 70%;
+    background-color: $greySiteColor;
+    opacity: 0.8;
+    border-radius: 15px;
+
+    h3.short-info-home-page{
+        font-family: Henny-Penny;
+        text-align: center;
+        margin-bottom: 30px;
+        color: $whiteSiteColor;
+    }
+
+    p{
+        border-radius: 15px;
+        padding: 20px;
+        color: $whiteSiteColor;
+    }
+    
+}
+
+//funding cards styel:
+h2.funding-cards-home-page{
+    font-family: Pattaya; 
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    color: $whiteSiteColor;
+}
+
+div.funding-cards{
+    margin-left: 5%;
+    text-align: center;
+
+    div.the-card-1{
+        width: 300px;
+        height: 250px;
+        margin-bottom: 40px;
+        background-color: $whiteSiteColor;
+        border: 5px double $yellowSiteColor;
+        box-shadow: 10px 10px 10px $greySiteColor;
+    
+        h5.head-card-1{
+            background-color: $greySiteColor;
+            color: $yellowSiteColor;
+            width: 100%;
+            padding: 7px;
+            margin-bottom: 15px;
+
+        }
+
+        button.button-1{
+            background-color: $greySiteColor;
+            color: $yellowSiteColor;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 5px;
+            right: 33%;
+
+        }
+
+        button.button-1:hover{
+         background-color: $yellowSiteColor;
+         color: $greySiteColor;
+         border: 2px solid $greySiteColor;
+         transition: background-color 1.5s ;
+        }
+
+        div.modal-header-1{
+            background-color: $yellowSiteColor;
+            color: $greySiteColor;
+        }
+
+        div.modal-footer-1{
+            background-color: $yellowSiteColor;
+        }
+    }
+
+    div.the-card-1:hover{
+        background-color: $yellowSiteColor;
+        border: 4px double $greySiteColor;
+        transition: background-color 1s;
+    }
+
+    div.the-card-2{
+        width: 300px;
+        height: 250px;
+        margin-bottom: 40px;
+        background-color: $whiteSiteColor;
+        box-shadow: 10px 10px 10px $greySiteColor;
+        border: 5px double $greenSiteColor;
+
+        h5.head-card-2{
+            background-color: $greySiteColor;
+            color: $greenSiteColor;
+            width: 100%;
+            padding: 7px;
+            margin-bottom: 15px;
+        }
+
+        button.button-2{
+            background-color: $greySiteColor;
+            color: $greenSiteColor;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 5px;
+            right: 33%;
+
+        }
+
+        button.button-2:hover{
+         background-color: $greenSiteColor;
+         color: $greySiteColor;
+         border: 2px solid $greySiteColor;
+         transition: background-color 1.5s ;
+        }
+
+        div.modal-header-2{
+            background-color: $greenSiteColor;
+            color: $greySiteColor;
+        }
+
+        div.modal-footer-2{
+            background-color: $greenSiteColor;
+        }
+    }
+
+    div.the-card-2:hover{
+        background-color: $greenSiteColor;
+        color: $greySiteColor;
+        border: 4px double $greySiteColor;
+        transition: background-color 1s;
+    }
+    
+    div.the-card-3{
+        width: 300px;
+        height: 250px;
+        margin-bottom: 40px;
+        background-color: $whiteSiteColor;
+        border: 4px double $purpleSiteColor;
+        box-shadow: 10px 10px 10px $greySiteColor;
+
+        h5.head-card-3{
+            background-color: $greySiteColor;
+            color: $purpleSiteColor;
+            width: 100%;
+            padding: 7px;
+            margin-bottom: 15px;
+
+        }
+
+        button.button-3{
+            background-color: $greySiteColor;
+            color: $purpleSiteColor;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 5px;
+            right: 33%;
+        }
+
+        button.button-3:hover{
+         background-color: $purpleSiteColor;
+         color: $greySiteColor;
+         border: 2px solid $greySiteColor;
+         transition: background-color 1.5s ;
+        }
+
+        div.modal-header-3{
+            background-color: $purpleSiteColor;
+            color: $greySiteColor;
+        }
+
+        div.modal-footer-3{
+            background-color: $purpleSiteColor;
+        }
+    }
+
+    div.the-card-3:hover{
+        background-color: $purpleSiteColor;
+        border: 4px double $greySiteColor;
+        transition: background-color 1s;
+    }
+}
+
+//resonsive:
+@media only screen and (max-width: 768px) {
+    div.wrap-gallery{
+        display: none;
+    }
+
+    div.responsive-img img{
+        display: inline-block;
+        border: 2px solid $greySiteColor;
+        width: 90%;
+    }
+
+    div.responsive-img {
+        margin: 40px 10%;
+        width: 90%;
+    }
+
+    div.funding-cards{
+       display: grid;
+       justify-content: center;
+
+       div.the-card-1,
+       div.the-card-2,
+       div.the-card-3{
+           width: 90%;
+       }
+
+    }
+
+    div.modal-info-card{
+        width: 65%;
+        margin-left: 4%;
+        }
+
+}

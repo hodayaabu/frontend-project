@@ -1,0 +1,61 @@
+//colors
+$purpleSiteColor: #9453A6;
+$greenSiteColor: #8CBF3F;
+$yellowSiteColor: #F2CC0F;
+$greySiteColor: #343a40;
+$whiteSiteColor: #fdf8e5;
+$blueSiteColor: #09053f;
+
+@font-face {
+    font-family: Henny-Penny;
+    src: url(../../fonts/HennyPenny-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/Roboto-Black.ttf);
+}
+
+body{
+    font-family: Roboto;
+}
+
+//titlemstyle:
+h1.faq-page-title{
+    font-family: Pattaya; 
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    color: $whiteSiteColor;
+}
+
+//accordion Qustion style:
+div#accordionQustion{
+    width: 70%;
+    margin: 20px auto;
+
+    button.button-question-link{
+        color: $blueSiteColor;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    #headingOne,
+    #headingTwo,
+    #headingThree,
+    #headingFour,
+    #headingFive{
+        border: 3px solid $greenSiteColor;
+        background-color: $whiteSiteColor;
+    }
+
+    div#collapseOne,
+    div#collapseTwo,
+    div#collapseThree,
+    div#collapseFour,
+    div#collapseFive{
+        border: 5px solid $yellowSiteColor;
+        background-color: $blueSiteColor;
+        color: $whiteSiteColor;
+    }
+}

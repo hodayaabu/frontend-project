@@ -1,0 +1,136 @@
+//colors
+$purpleSiteColor: #9453A6;
+$greenSiteColor: #8CBF3F;
+$yellowSiteColor: #F2CC0F;
+$greySiteColor: #343a40;
+$whiteSiteColor: #fdf8e5;
+$blueSiteColor: #09053f;
+
+@font-face {
+    font-family: 'Henny-Penny';
+    src: url(../../fonts/HennyPenny-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../../fonts/Roboto-Black.ttf);
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+//title style:
+h1.contact-page-main-title{
+    font-family: Pattaya; 
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    color: $whiteSiteColor;
+}
+
+h3.contact-page-second-title{
+    font-family: 'henny-penny';
+    text-align: center;
+    margin-bottom: 40px;
+    color: $whiteSiteColor;
+}
+
+//form style:
+div.contact-us{
+   display: grid;
+   grid-gap: 50px;
+   grid-template-columns: 550px 300px;
+   justify-content: center;
+   margin-top: 40px;
+
+    form.contact-form{
+        margin-right: 30px; 
+        padding: 20px;
+        border: 4px double $whiteSiteColor;
+
+    input{
+        border-radius: 20px;
+        padding: 15px;
+        margin: 10px 0px;
+        background-color: $whiteSiteColor;
+        border: 2px solid $greenSiteColor;
+     }
+
+     span#emailErr{
+         color: $greenSiteColor;
+     }
+
+    #user_message{
+        height: 100px;
+        border-radius: 20px;
+        background-color: $whiteSiteColor;
+        border: 2px solid $greenSiteColor;
+        }
+
+    #button_form{
+        width: 60%;
+        margin-left: 20%;
+        background-color: $greenSiteColor;
+        text-align: center;
+        color: $whiteSiteColor;
+        border: 4px double $whiteSiteColor;
+        font-weight: bold;
+         }
+
+         #button_form:hover{
+             background-color: $whiteSiteColor;
+             color: $greenSiteColor;
+             font-weight: bold;
+             border: 4px double $greenSiteColor;
+             transition: background-color 1.5s;
+         }
+      }
+
+//contact info style:
+ div.contact-info{
+        border: 2px solid $whiteSiteColor;
+        padding: 10px;
+        background-color: $greenSiteColor;
+        border:  4px double $whiteSiteColor;
+
+        h3.contact-page-third-title{
+            text-align: center;
+            font-family: "Henny-Penny";
+            margin: 60px;
+            color: $whiteSiteColor
+        }
+
+        p{
+            text-align: center;
+            color: $whiteSiteColor;
+        }
+
+        a{
+            color: $whiteSiteColor;
+        }
+    }
+
+}
+
+//responsive:
+@media only screen and (max-width: 768px) {
+    div.contact-us{
+        display: flex;
+        flex-direction: column;
+
+        form.contact-form,
+        div.contact-info{
+            margin: 15px auto;
+            width: 300px;
+        }
+
+        div.map iframe{
+            width: 100%;
+            height: 200px;
+           justify-content: center;
+        }
+    }
+}
+
+

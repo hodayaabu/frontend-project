@@ -1,0 +1,96 @@
+
+//colors
+$purpleSiteColor: #9453A6;
+$greenSiteColor: #8CBF3F;
+$yellowSiteColor: #F2CC0F;
+$greySiteColor: #343a40;
+$whiteSiteColor: #fdf8e5;
+$blueSiteColor: #09053f;
+
+@font-face {
+    font-family: Henny-Penny;
+    src: url(../../fonts/HennyPenny-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/Roboto-Black.ttf);
+}
+
+
+body{
+    font-family: Roboto;
+}
+
+//titel style
+h1.about-page-main-titel{
+    font-family: Pattaya; 
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    color: $whiteSiteColor;
+}
+
+
+//article style
+main.about-page-main{
+    width: 80%;
+    margin: auto;
+
+    article.article1,
+    article.article2 {
+        margin: 40px auto;
+        width: 90%;
+        background-color: $greySiteColor;
+        opacity: 0.9;
+        padding: 30px;
+        border-radius: 15px;
+        color: $whiteSiteColor;
+
+
+         h2.about-page-second-titel,
+         h2.about-page-third-titel{
+            font-family: 'henny-penny';
+            margin: 40px 0px;
+            text-align: center;
+            background-color: $whiteSiteColor;
+            color: $greySiteColor;
+            width: 100%;
+            padding: 10px;
+
+        }
+    }
+}
+
+article.article1 a,
+article.article2 a{
+    color: $greenSiteColor;
+}
+
+div.mayor-info{
+    display: flex;
+    margin: 10px;
+   
+    div.mayor-img{
+        width: 50%;
+        margin-left:  15px;
+    }
+}
+
+
+//responsive:
+@media only screen and (max-width: 768px){
+    div.mayor-info{
+        display: inline-block;
+    }
+
+    div.mayor-img{
+    width: 30%;
+    height: auto;
+    margin: 10px auto;
+}
+
+}
+
+
+
